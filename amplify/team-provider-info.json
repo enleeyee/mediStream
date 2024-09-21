@@ -13,7 +13,19 @@
     },
     "categories": {
       "function": {
-        "medistream79999209": {}
+        "medistream79999209": {
+          "deploymentBucketName": "amplify-medistream-dev-2952a-deployment",
+          "s3Key": "amplify-builds/medistream79999209-4142394350687967346b-build.zip"
+        }
+      },
+      "auth": {
+        "medistream8783a446": {}
+      },
+      "api": {
+        "api2b0df875": {}
+      },
+      "predictions": {
+        "transcribeAudioToText": {}
       }
     }
   }

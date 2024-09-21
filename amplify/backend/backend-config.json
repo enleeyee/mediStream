@@ -47,5 +47,30 @@
       "providerPlugin": "awscloudformation",
       "service": "Lambda"
     }
+  },
+  "parameters": {
+    "AMPLIFY_function_medistream79999209_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "medistream79999209"
+        }
+      ]
+    },
+    "AMPLIFY_function_medistream79999209_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "medistream79999209"
+        }
+      ]
+    }
+  },
+  "predictions": {
+    "transcribeAudioToText": {
+      "convertType": "transcription",
+      "providerPlugin": "awscloudformation",
+      "service": "Transcribe"
+    }
   }
 }
