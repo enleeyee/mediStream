@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-medistream-dev-2952a-authRole",
+      "UnauthRoleArn": "arn:aws:iam::061039768850:role/amplify-medistream-dev-2952a-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::061039768850:role/amplify-medistream-dev-2952a-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-medistream-dev-2952a-deployment",
+      "UnauthRoleName": "amplify-medistream-dev-2952a-unauthRole",
+      "StackName": "amplify-medistream-dev-2952a",
+      "StackId": "arn:aws:cloudformation:us-east-1:061039768850:stack/amplify-medistream-dev-2952a/a914aec0-784b-11ef-92d9-0ea7c795c7a5",
+      "AmplifyAppId": "d3hjdxr8sq9lwu"
+    },
+    "categories": {
+      "function": {
+        "medistream79999209": {}
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/items": {
+      "name": "/items",
+      "lambdaFunction": "medistream79999209",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
