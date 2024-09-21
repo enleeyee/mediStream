@@ -67,10 +67,17 @@
     }
   },
   "predictions": {
+<<<<<<< Updated upstream
     "transcribeAudioToText": {
       "convertType": "transcription",
       "providerPlugin": "awscloudformation",
       "service": "Transcribe"
+=======
+    "interpretMedicalText": {
+      "interpretType": "interpretText",
+      "providerPlugin": "awscloudformation",
+      "service": "Comprehend"
+>>>>>>> Stashed changes
     }
   }
 }

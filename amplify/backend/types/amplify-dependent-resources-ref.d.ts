@@ -27,9 +27,15 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "predictions": {
+<<<<<<< Updated upstream
     "transcribeAudioToText": {
       "language": "string",
       "region": "string"
+=======
+    "interpretMedicalText": {
+      "region": "string",
+      "type": "string"
+>>>>>>> Stashed changes
     }
   }
 }

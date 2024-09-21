@@ -28,5 +28,35 @@
         "transcribeAudioToText": {}
       }
     }
+  },
+  "medistream": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-medistream-medistream-af803-authRole",
+      "UnauthRoleArn": "arn:aws:iam::061039768850:role/amplify-medistream-medistream-af803-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::061039768850:role/amplify-medistream-medistream-af803-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-medistream-medistream-af803-deployment",
+      "UnauthRoleName": "amplify-medistream-medistream-af803-unauthRole",
+      "StackName": "amplify-medistream-medistream-af803",
+      "StackId": "arn:aws:cloudformation:us-east-1:061039768850:stack/amplify-medistream-medistream-af803/59dafa00-784e-11ef-9ef1-0e52dc20330f",
+      "AmplifyAppId": "d3hjdxr8sq9lwu"
+    },
+    "categories": {
+      "auth": {
+        "medistream8783a446": {}
+      },
+      "function": {
+        "medistream79999209": {
+          "deploymentBucketName": "amplify-medistream-medistream-af803-deployment",
+          "s3Key": "amplify-builds/medistream79999209-4142394350687967346b-build.zip"
+        }
+      },
+      "api": {
+        "api2b0df875": {}
+      },
+      "predictions": {
+        "interpretMedicalText": {}
+      }
+    }
   }
 }
