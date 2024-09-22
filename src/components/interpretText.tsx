@@ -1,7 +1,7 @@
 import { Predictions } from '@aws-amplify/predictions';
 import { Amplify } from 'aws-amplify';
 import { useState } from 'react';
-import amplifyconfig from './amplifyconfiguration.json';
+import amplifyconfig from '../amplifyconfiguration.json';
 
 Amplify.configure(amplifyconfig);
 

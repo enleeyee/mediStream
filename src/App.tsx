@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Predictions } from '@aws-amplify/predictions';
 import { Amplify } from 'aws-amplify';
-import amplifyconfig from './components/amplifyconfiguration.json';
-//import { Text } from '@aws-amplify/ui-react';
+import amplifyconfig from './amplifyconfiguration.json';
+// import { Text } from '@aws-amplify/ui-react';
 
 function TextInterpretation() {
   const [response, setResponse] = useState('Input some text and click enter to test');
