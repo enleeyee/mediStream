@@ -3,7 +3,7 @@
 // import { generateClient } from "aws-amplify/data";
 
 // const client = generateClient<Schema>();
-
+import TextInterpretation from "./components/interpretText.tsx"
 function App() {
   // const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
 
@@ -20,6 +20,7 @@ function App() {
   return (
     <main>
       <h1>Hello World</h1>
+      <TextInterpretation />
     </main>
   );
 }
