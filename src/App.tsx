@@ -1,28 +1,51 @@
-// import { useEffect, useState } from "react";
-// import type { Schema } from "../amplify/data/resource";
-// import { generateClient } from "aws-amplify/data";
+import React, { useState } from 'react';
+import { Predictions } from '@aws-amplify/predictions';
+import { Amplify } from 'aws-amplify';
+import amplifyconfig from './components/amplifyconfiguration.json';
+//import { Text } from '@aws-amplify/ui-react';
 
-// const client = generateClient<Schema>();
-import TextInterpretation from "./components/interpretText.tsx"
-function App() {
-  // const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
+function TextInterpretation() {
+  const [response, setResponse] = useState('Input some text and click enter to test');
+  const [textToInterpret, setTextToInterpret] = useState('write some text here to interpret');
 
-  // useEffect(() => {
-  //   client.models.Todo.observeQuery().subscribe({
-  //     next: (data) => setTodos([...data.items]),
-  //   });
-  // }, []);
+  const interpretFromPredictions = async () => {
+      try {
+          const result = await Predictions.interpret({ // Added await
+              text: {
+                  source: {
+                      text: textToInterpret,
+                  },
+                  type: 'all', // Use uppercase 'ALL'
+              },
+          });
+          setResponse(JSON.stringify(result, null, 2));
+      } catch (err) {
+          setResponse(JSON.stringify(err, null, 2));
+      }
+  }
 
-  // function createTodo() {
-  //   client.models.Todo.create({ content: window.prompt("Todo content") });
-  // }
+  function setText(event: React.ChangeEvent<HTMLInputElement>) {
+      setTextToInterpret(event.target.value);
+  }
 
   return (
-    <main>
-      <h1>Hello World</h1>
-      <TextInterpretation />
-    </main>
+      <div>
+          <h3>Text Interpretation</h3>
+          <input value={textToInterpret} onChange={setText} />
+          <button onClick={interpretFromPredictions}>Test</button>
+          <p>{response}</p>
+      </div>
   );
+}
+Amplify.configure(amplifyconfig);
+
+function App() {
+    return (
+        <main>
+            <h1>Hello World</h1>
+            <TextInterpretation />
+        </main>
+    );
 }
 
 export default App;
